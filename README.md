@@ -5,7 +5,7 @@ walk-through JSP programming
 `프로젝트로 배우는 자바 웹 프로그래밍 (황희정, 한빛아카데미)`
 <br/><br/>
 
-#### HttpServletRequest 클래스의 주요 메소드
+- #### HttpServletRequest 클래스의 주요 메소드
 <pre><code>getParameterNames() // 현재 요청에 포함된 매개변수 이름을 열거 형태로 넘겨준다.
 getParameter(name) // 문자열 name과 같은 이름을 가진 매개변수 값을 가져온다. <strong>(문자열로 반환)</strong>
 getParameterValues(name) // 문자열 name과 같은 이름을 가진 매개변수 값을 <strong>배열</strong> 형태로 가져온다.
@@ -18,7 +18,7 @@ getProtocol() // 현재 서버으 프로토콜을 문자열 형태로 알려준�
 setCharacterEncoding() // 현재 JSP로 전달되는 내용을 지정한 캐릭터셋으로 변환해준다.
                        // HTML 폼에서 한글을 입력할 때 정상적으로 처리하려면 반드시 필요하다.
 </code></pre>
-#### HttpServletResponse 클래스의 주요 메소드
+- #### HttpServletResponse 클래스의 주요 메소드
 <pre><code>setContentType(type) // 문자열 형태의 type에 지정된 MIME Type을으로 Content Type을 설정한다.
 setHeader(name, value) // 문자열 name의 이름으로 문자열 value 값을 헤더로 설정한다.
 setDateHeader(name, date) // 문자열 name의 이름으로 date에 설정된 밀리세컨드 시간 값을 헤더에 설정한다.
@@ -27,7 +27,7 @@ sendRedirect(url) // 클라이언트 요청을
 </code></pre>
 
 
-#### ch04/calc.html 실행 시, 
+- #### ch04/calc.html 실행 시, 
 ```
 <form name=form1 action=/jspbook/CalcServlet method=post> <!-- 계산 기능이 통합된 서블릿 호출 -->
 <form name=form1 action=/jspbook/CalcServlet2 method=post> <!-- 계산 기능이 분리된 서블릿 호출 -->
