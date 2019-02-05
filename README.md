@@ -3,7 +3,7 @@ walk-through JSP programming
 
 #### HttpServletRequest 클래스의 주요 메소드
 <pre><code>getParameterNames() // 현재 요청에 포함된 매개변수 이름을 열거 형태로 넘겨준다.
-getParameter(name) // 문자열 name과 같은 이름을 가진 매개변수 값을 가져온다.
+getParameter(name) // 문자열 name과 같은 이름을 가진 매개변수 값을 가져온다. <strong>(문자열로 반환)</strong>
 getParameterValues(name) // 문자열 name과 같은 이름을 가진 매개변수 값을 <strong>배열</strong> 형태로 가져온다.
                          // 주로 checkbox, multiple list등에 사용
 getCookies() // 모든 쿠키 값을 javax.servlet.http.Cookie의 배열 형태로 가져온다.
