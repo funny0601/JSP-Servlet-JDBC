@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>계산기</title>
+</head>
+<body>
+	<center>
+		<h3>계산기</h3>
+		<hr>
+		<!-- 서블릿 경로에 주의할 것 -->
+		<form name=form1 action=/jspbook/CalcServlet method=post>
+			<input type="text" name="num1" width=200 size="5">
+			<!-- first input number -->
+			<select name="operator">
+				<!-- operator selection -->
+				<option selected>+</option>
+				<option>-</option>
+				<option>*</option>
+				<option>/</option>
+			</select> <input type="text" name="num2" width=200 size="5">
+			<!-- second input number -->
+			<input type="submit" value="계산" name="B1">
+			<!-- calculation button -->
+			<input type="reset" value="다시 입력" name="B2">
+			<!-- reset -->
+		</form>
+	</center>
+</body>
+</html>
